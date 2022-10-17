@@ -1,55 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Universe</title>
-</head>
-    <style>
-        body {margin:0;}
-        
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333;
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
-        
-        li {
-          float: right;
-        }
-        
-        li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover:not(.active) {
-          background-color: #111;
-        }
-        
-        .active {
-          background-color: #f7bf50;
-        }
-        </style>
-        </head>
-        <body>
-        
+    <title>Home</title>
+  </head>
+  <!--
+    The style tag is used to define style information in css.
+    If there are multiple style tags, elements will use the last read sheet.
+  -->
+  <style>
+    body {
+      margin: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+
+      top: 0;
+      width: 100%;
+    }
+
+    li {
+      float: right;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 20px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #f7bf50;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
         <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="Super-Cluster.html">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li style="float:left"><img src = "Icon.jfif" width = "150"></li>
+          <li><a href="optional-survey.html">Survey</a></li>
+          <li><a href="About">About</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li style="float: left" style="align-self: center">
+            <img src="Images/Yellow text icon.png" width="150" />
+          </li>
         </ul>
-    <h1>Universe</h1>
-    <p>Welcome to the pain gallery. A one stop shop for your as much pain as I can describe without being kicked out of PTEC</p>
-</body>
+      </nav>
+      <h1>Pain Gallery</h1>
+    </header>
+    <main>
+      <p>
+        Welcome to the pain gallery. A one stop shop for your as much pain as I
+        can describe without being kicked out of PTEC.
+      </p>
+      <h2>Exhibit 1: Sleeves falling when washing hands</h2>
+      <img
+        src="Images/Wet cuffs.webp"
+        alt="A top down view of a grey sleeve on someones arm with the very tip of it wet."
+        height="300" />
+      <p>
+        You begin to wash your hands only to realize your cuffs are falling
+        towards the flowing stream of water. Adjusting it with your hands are
+        not an option due to them being wet. You can do nothing but watch and
+        jiggle your arm as your sleeve slowly end up getting wet.
+      </p>
+
+      <h2>Exhibit 2: Pulling a push door or vice versa</h2>
+      <img
+        src="images/Pulling a push door.jpg"
+        alt="Behind view of someone in a black tanktop using their full weight to pull open a glass door that has push labeled on it."
+        height="300" />
+      <p>
+        As you walk with your group of friends you meet the door seperating you
+        from the outside world. Without thinking about it you reach out to the
+        door handle that is clearly labeled pull and push it. Paniced you try to
+        pull harder to no avail. Your friends never talked to you again after
+        that.
+      </p>
+      <h2>Exhibit 3: A captcha that makes you ponder your existance</h2>
+      <img
+        src="images/Captcha.png"
+        alt="A screenshot of a text captcha asking the user to enter the text they see in the text above.
+        The text above is incomprehensible scribbles that resemble no letters"
+        height="300" />
+      <p>
+        Finally at the end of your extensive signing up process for a website
+        you are hit with a captcha. Only this is no ordinary captcha, this is an
+        impossible one meant to keep you away from completing your sign up
+        process.
+      </p>
+    </main>
+    <footer>
+      <a href="mailto: motherisatthestore@gmail.com"
+        >Email: motherisatthestore@gmail.com</a
+      >
+      <br />
+      <a href="tel+8002550711">Phone: 800-255-0711</a>
+      <p>&#169; Pain Gallery all rights Reserved</p>
+    </footer>
+  </body>
 </html>
