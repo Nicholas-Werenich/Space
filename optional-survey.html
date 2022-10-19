@@ -4,44 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Survey</title>
   </head>
-  <style>
-    body {
-      margin: 0;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-
-      top: 0;
-      width: 100%;
-    }
-
-    li {
-      float: right;
-    }
-
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 20px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover:not(.active) {
-      background-color: #111;
-    }
-
-    .active {
-      background-color: #f7bf50;
-    }
-  </style>
   <body>
     <header>
       <nav>
@@ -54,26 +19,45 @@
           </li>
         </ul>
       </nav>
-      <h1>Pain Gallery</h1>
+      <h1>Survey</h1>
     </header>
     <main>
       <form name="optionalSurvey" id="survey" action="thank-you.html">
-        <input type="radio" id="wetCuffs" name="exhibit" value="exhibit1" />
-        <label for="wetCuffs">Wet cuffs</label>
+        <fieldset form="survey">
+          <legend>What exhibit did you enjoy most?</legend>
+          <input type="radio" id="wetCuffs" name="exhibit" value="exhibit1" />
+          <label for="wetCuffs">Wet cuffs</label>
+          <br />
+          <input
+            type="radio"
+            id="pullingAPushDoor"
+            name="exhibit"
+            value="exhibit2" />
+          <label for="pullingAPushDoor">Pulling a push door</label>
+          <br />
+          <input type="radio" id="Captcha" name="exhibit" value="exhibit3" />
+          <label for="Captcha">Impossible captcha</label>
+        </fieldset>
+        <fieldset>
+          <legend>How was your experience?</legend>
+          <input type="checkbox" name="good" id="good" value="good" />
+          <label for="good">Good</label>
+          <br />
+          <input
+            type="checkbox"
+            name="marvelous"
+            id="marvelous"
+            value="marvelous" />
+          <label for="marvelous">Marvelous</label>
+          <br />
+          <input type="checkbox" name="superb" id="superb" value="superb" />
+          <label for="superb">Superb</label>
+        </fieldset>
+        <label for="suggestions">What changes would you make?</label>
         <br />
-        <input
-          type="radio"
-          id="pullingAPushDoor"
-          name="exhibit"
-          value="exhibit2" />
-        <label for="pullingAPushDoor">Pulling a push door</label>
-        <br />
-        <input type="radio" id="Captcha" name="exhibit" value="exhibit1" />
-        <label for="Captcha">Impossible captcha</label>
-
+        <textarea name="ideas" id="suggestions" cols="35" rows="5"> </textarea>
         <br />
         <input type="submit" name="submitbutton" id="submit" value="Submit" />
-        <br />
         <input type="reset" name="clearForm" id="clear" value="Reset" />
       </form>
     </main>
