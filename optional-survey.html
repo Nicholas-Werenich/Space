@@ -22,7 +22,7 @@
       <h1>Survey</h1>
     </header>
     <main>
-      <form name="optionalSurvey" id="survey" action="thank-you.html">
+      <form name="optionalSurvey" id="survey" action="index.html">
         <fieldset form="survey">
           <legend>What exhibit did you enjoy most?</legend>
           <input type="radio" id="wetCuffs" name="exhibit" value="exhibit1" />
@@ -39,20 +39,27 @@
           <label for="Captcha">Impossible captcha</label>
         </fieldset>
         <fieldset>
-          <legend>How was your experience?</legend>
-          <input type="checkbox" name="good" id="good" value="good" />
-          <label for="good">Good</label>
+          <legend>What pages did you like?</legend>
+          <input
+            type="checkbox"
+            name="terrible"
+            id="terrible"
+            value="terrible" />
+          <label for="terrible">Home page</label>
           <br />
           <input
             type="checkbox"
             name="marvelous"
             id="marvelous"
             value="marvelous" />
-          <label for="marvelous">Marvelous</label>
+          <label for="marvelous">About page</label>
           <br />
           <input type="checkbox" name="superb" id="superb" value="superb" />
-          <label for="superb">Superb</label>
+          <label for="superb">Survey page</label>
         </fieldset>
+        <label for="rating">Please rate the website from 1-10:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" />
+        <br />
         <label for="suggestions">What changes would you make?</label>
         <br />
         <textarea name="ideas" id="suggestions" cols="35" rows="5"> </textarea>
