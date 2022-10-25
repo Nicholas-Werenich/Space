@@ -10,9 +10,12 @@
   <body>
     <header>
       <nav>
+        <!--
+          Navigation bar.
+        -->
         <ul>
           <li><a class="active" href="optional-survey.html">Survey</a></li>
-          <li><a href="About">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="index.html">Home</a></li>
           <li style="float: left" style="align-self: center">
             <img src="Images/Yellow text icon.png" width="150" />
@@ -22,51 +25,78 @@
       <h1>Survey</h1>
     </header>
     <main>
-      <form name="optionalSurvey" id="survey" action="index.html">
+      <!--
+        Form asking the user for input. Method is get because none of the data is sensitive.
+      -->
+      <form name="optional-survey" id="survey" action="index.html" method="get">
+        <!--
+          Group the radio inputs together with a fieldset to give them a seperate question.
+        -->
         <fieldset form="survey">
           <legend>What exhibit did you enjoy most?</legend>
-          <input type="radio" id="wetCuffs" name="exhibit" value="exhibit1" />
-          <label for="wetCuffs">Wet cuffs</label>
+          <!--
+            Radio input, only one of the options can be selected, input comes before label.
+          -->
+          <input type="radio" id="wet-cuffs" name="exhibit" value="exhibit1" />
+          <label for="wet-cuffs">Wet cuffs</label>
           <br />
           <input
             type="radio"
-            id="pullingAPushDoor"
+            id="pulling-door"
             name="exhibit"
             value="exhibit2" />
-          <label for="pullingAPushDoor">Pulling a push door</label>
+          <label for="pulling-door">Pulling a push door</label>
           <br />
           <input type="radio" id="Captcha" name="exhibit" value="exhibit3" />
           <label for="Captcha">Impossible captcha</label>
         </fieldset>
         <fieldset>
           <legend>What pages did you like?</legend>
-          <input
-            type="checkbox"
-            name="terrible"
-            id="terrible"
-            value="terrible" />
-          <label for="terrible">Home page</label>
+          <!--
+            Check box input for the user to give multiple of the set choices
+          -->
+          <input type="checkbox" name="home-page" id="home" value="home" />
+          <label for="home">Home page</label>
+          <br />
+          <input type="checkbox" name="about-page" id="about" value="about" />
+          <label for="about">About page</label>
           <br />
           <input
             type="checkbox"
-            name="marvelous"
-            id="marvelous"
-            value="marvelous" />
-          <label for="marvelous">About page</label>
-          <br />
-          <input type="checkbox" name="superb" id="superb" value="superb" />
-          <label for="superb">Survey page</label>
+            name="survey-page"
+            id="survey"
+            value="survey" />
+          <label for="survey">Survey page</label>
         </fieldset>
+        <!--
+          Get a general user enjoyment level input by using the range input
+        -->
         <label for="rating">Please rate the website from 1-10:</label>
         <input type="range" id="rating" name="rating" min="1" max="10" />
         <br />
         <label for="suggestions">What changes would you make?</label>
         <br />
+        <!--
+          Input for anything that was not already included on the survey
+        -->
         <textarea name="ideas" id="suggestions" cols="35" rows="5"> </textarea>
         <br />
+        <!--
+          Submit and reset button for functionality
+        -->
         <input type="submit" name="submitbutton" id="submit" value="Submit" />
         <input type="reset" name="clearForm" id="clear" value="Reset" />
       </form>
     </main>
+    <!--
+      Copyright and contact info.
+    -->
+    <footer>
+      <hr />
+      <a href="mailto: motherisatthestore@gmail.com"
+        >Email: motherisatthestore@gmail.com</a
+      >
+      <p>&#169; Nicholas Werenich</p>
+    </footer>
   </body>
 </html>
