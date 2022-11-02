@@ -1,41 +1,53 @@
+/*
+  Styles the body to have no margins, an off black background, white and centered text.
+*/
 body {
   margin: 0;
   background: rgb(32, 32, 32);
   color: rgb(255, 255, 251);
   text-align: center;
 }
-
+/*
+  Adds padding to the left and right of paragraph tags.
+*/
 p {
   padding-left: 20%;
   padding-right: 20%;
 }
-
+/*
+  Sets left and right margins for tables to auto.
+*/
 table {
   margin-left: auto;
   margin-right: auto;
 }
-
+/*
+  Gives 1px of a white border and 10px of padding to table headings and table data.
+*/
 th,
 td {
   border: 1px solid #ffffff;
   padding: 10px;
 }
-
+/*
+  Removes the list style type, no margins or padding, hides overflow and adds an off black background.
+*/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: rgb(24, 24, 24);
-
-  top: 0;
-  width: 100%;
 }
-
+/*
+  Makes list items align to the right.
+*/
 li {
   float: right;
 }
-
+/*
+ Makes like items block elements, white, center aligned have 20px by 16px padding and get ride of underline.
+*/
 li a {
   display: block;
   color: white;
@@ -43,11 +55,15 @@ li a {
   padding: 20px 16px;
   text-decoration: none;
 }
-
+/*
+  Make the nav links a lighter grey if hovered across excluding the active page.
+*/
 li a:hover:not(.active) {
   background-color: #333;
 }
-
+/*
+  Make the link for the current webpage yellow in the nav.
+*/
 .active {
   background-color: #f7bf50;
 }
